@@ -28,5 +28,11 @@ $(document).ready(function() {
                 items:5
             }
         }
-    })
+    });
+
+    $(function() {
+        $('.chart').easyPieChart({
+            //your options goes here
+        });
+    });
 });
