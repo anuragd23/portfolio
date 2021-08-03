@@ -1,9 +1,10 @@
 $(document).ready(function() {
+
     $('#slides').superslides({
-        animation: 'fade',
-        play: 5000,
-        pagination: false,
-    });
+		animation: 'fade',
+		play: 5000,
+		pagination: false
+	});
 
     var typed = new Typed(".typed", {
         strings: ["Software Engineer.", "Web Developer.", "Programmer Analyst."],
@@ -57,21 +58,20 @@ $(document).ready(function() {
 
     $("#filters a").click(function() {
 
-        console.log("You are here!");
-        $("#filters .current").removeClass("current");
-        $(this).addClass("current");
+		$("#filters .current").removeClass("current");
+		$(this).addClass("current");
 
-        var selector = $(this).attr("data-filter");
+		var selector = $(this).attr("data-filter");
 
-        $(".items").isotope({
-            filter: selector,
-            animationOptions: {
-                duration: 1500,
-                easing: 'linear',
-                queue: false,
-            }
-        });
+		$(".items").isotope({
+			filter: selector,
+			animationOptions: {
+				duration: 1500,
+				easing: 'linear',
+				queue: false
+			}
+		});
 
-        return false;
-    });  
+		return false;
+	});
 });
