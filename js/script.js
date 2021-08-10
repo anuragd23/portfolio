@@ -1,3 +1,11 @@
+$(window).on("load", function() {
+    $(".loader .inner").fadeOut(800, function() {
+        $(".loader").fadeOut(900);
+    });
+})
+
+
+
 $(document).ready(function() {
 
     $('#slides').superslides({
